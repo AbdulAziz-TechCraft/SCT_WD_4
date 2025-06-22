@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern To-Do Web App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>📝 TO-DO WEB APP</h1>
+  </header>
+
+  <div class="container">
+    <form id="task-form">
+      <input type="text" id="task-input" placeholder="Task" required />
+      <input type="datetime-local" id="task-time" required />
+      <select id="task-category">
+        <option value="Work">Work</option>
+        <option value="Personal">Personal</option>
+        <option value="Others">Others</option>
+      </select>
+      <select id="task-priority">
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+      <button type="submit">Add</button>
+    </form>
+
+    <div class="filter">
+      <label for="filter-category">Filter:</label>
+      <select id="filter-category">
+        <option value="All">All</option>
+        <option value="Work">Work</option>
+        <option value="Personal">Personal</option>
+        <option value="Others">Others</option>
+      </select>
+    </div>
+
+    <ul id="task-list"></ul>
+  </div>
+
+  <footer class="app-footer">
+    <p>&copy; Abdul Aziz Shaik - To-Do Web App</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
